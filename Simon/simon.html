@@ -1,0 +1,54 @@
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title></title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="./CSS/stylo.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+
+	<!-- Los botones de colores que seran los que tendremos que pulsar -->
+
+	<div class="contenedor">
+		<div class="botones">
+			<button id="verde" data-color="verde">&nbsp;</button>
+			<button id="amarillo" data-color="amarillo">&nbsp;</button>
+			<button id="azul" data-color="azul">&nbsp;</button>
+			<button id="rojo" data-color="rojo">&nbsp;</button>
+			<button id="blanco" data-color="blanco">&nbsp;</button>
+		</div>
+
+		<!-- Los botones principales para iniciar el juego o bien ver la clasificación -->
+
+		<div id="botonesprincipales">
+			<button id="btnEmpezar" class="principal" onclick="iniciar()">Empezar</button>
+			<button id="Tabla" onclick="clasificacion()">Clasificacion</button>
+		</div>
+	</div>
+
+	<!-- El siguiente div mostrara la reglas del juego -->
+	<div id="simon">
+		<h1>Juega a Simon</h1>
+	</div>
+	<div id="texto">
+		<h3>Reglas del juego:</h3>
+		<h4>Deberas pulsar el cuadro que parpadee, si pulsas el cuadro incorrecto habras perdido!</h2>
+	</div>
+
+	<!-- Aqui cargamos el audio -->
+	<audio id="Musica">
+		<source src="./Musica/mario.mp3" type="audio/mpeg">
+	</audio>
+
+	<button id="Reproducir">Musica de Mario Bross!</button>
+
+
+	<script src="./JS/JS.js"></script>
+</body>
+
+</html>
