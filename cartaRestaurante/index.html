@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra carta</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu-title ">
+            <span>Nuestro menú</span>
+        </div>
+
+        <div class="categories">
+            <ul id="menu">
+                <li data-filtro="">Todo</li>
+                <li data-filtro="veganos">Veganos</li>
+                <li data-filtro="celiacos">Celíacos</li>
+                <li data-filtro="intolerantes">Intolerantes</li>
+            </ul>
+
+
+
+            <button class="btn-orden" id="ordenar">Ordenar por precio</button>
+
+            <!-- template platos -->
+            <section id="platos">
+                <div>
+                </div>
+                <template id="plantilla-carta">
+                    <div class="plato" data-veganos="false" data-celiacos="false" data-intolerantes="false">
+                        <img src="" />
+                        <div class="contenido">
+                            <h4 class="nombrePlato"></h4>
+                            <p class="precio" data-price=""></p>
+                            <p class="ingredientes"></p>
+                        </div>
+                    </div>
+                </template>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
